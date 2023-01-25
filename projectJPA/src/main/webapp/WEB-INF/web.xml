@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_9" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+
+	<servlet>
+		<servlet-name>addController</servlet-name>
+		<display-name>addController</display-name>
+		<servlet-class>Controller.addController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>updateController</servlet-name>
+		<display-name>updateController</display-name>
+		<servlet-class>Controller.updateController</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>deleteController</servlet-name>
+		<display-name>deleteController</display-name>
+		<servlet-class>Controller.deleteController</servlet-class>
+	</servlet>
+	
+
+	<servlet-mapping>
+		<servlet-name>addController</servlet-name>
+		<url-pattern>/addController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>updateController</servlet-name>
+		<url-pattern>/updateController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteController</servlet-name>
+		<url-pattern>/deleteController</url-pattern>
+	</servlet-mapping>
+
+  
+</web-app>
